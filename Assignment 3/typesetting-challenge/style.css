@@ -63,7 +63,6 @@ footer p {
   color: #555;
 }
 
-/* Link styling */
 a {
   color: #aa6666;
   text-decoration: underline;
@@ -81,7 +80,6 @@ a:focus {
   outline: none;
 }
 
-/* External link icon styling */
 a[href^="http"]:not([href*="st-huxley"])::after {
   content: "";
   display: inline-block;
@@ -90,4 +88,44 @@ a[href^="http"]:not([href*="st-huxley"])::after {
   margin-left: 0.3em;
   background: url('external-link-52.png') no-repeat center center;
   background-size: contain;
+}
+
+/* Navigation styling */
+nav {
+  background-color: #f8f3f3;
+  border: 2px solid #aa6666;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #aa6666;
+  padding: 15px 0;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #cc7777;
+  color: #fff;
+  text-decoration: none;
 }
