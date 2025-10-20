@@ -69,4 +69,6 @@ nav a:hover {
 
 .feature {
   width: 200px;
+  float: left;          /* Float the image to the left */
+  margin: 0 1em 1em 0;  /* Space: right and bottom */
 }
