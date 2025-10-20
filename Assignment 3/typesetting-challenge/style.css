@@ -4,19 +4,38 @@
 
 body {
   font-family: 'Merriweather', serif;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #222;
   margin: 0 auto;
   padding: 0 20px;
   min-width: 980px;
   max-width: 1400px;
   background-color: #fff;
+  letter-spacing: 0.02em;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', serif;
   color: #333;
-  margin-top: 0;
+  letter-spacing: 0.03em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0;
+}
+
+p, li {
+  font-size: 1rem;
+}
+
+section h2 + p {
+  text-indent: 2rem;
 }
 
 main {
@@ -44,11 +63,31 @@ footer p {
   color: #555;
 }
 
+/* Link styling */
 a {
   color: #aa6666;
-  text-decoration: none;
+  text-decoration: underline;
+  outline: none;
 }
 
-a:hover {
-  text-decoration: underline;
+a:visited {
+  color: #885555;
+}
+
+a:hover,
+a:focus {
+  color: #cc7777;
+  text-decoration: none;
+  outline: none;
+}
+
+/* External link icon styling */
+a[href^="http"]:not([href*="st-huxley"])::after {
+  content: "";
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.3em;
+  background: url('external-link-52.png') no-repeat center center;
+  background-size: contain;
 }
